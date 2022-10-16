@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+/************************************** Mobile First ***********************************/
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.nav {
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.scroll {
+    background-color: #151515;
+    height: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #151515;
+    padding: 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav img {
+    height: 40px;
+    margin: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    margin: 30px;
+	padding: 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+header h1 {
+    font-size: 20px;
+    color: white;
+    font-family: 'Open Sans';
+}
+
+main {
+    margin: 20px;
+}
+
+main ul {
+    list-style: none;
+}
+
+main li {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+main li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main li a {
+    font-size: 17px;
+    color: black;
+    margin: 5px;
+    line-height: 2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    flex-wrap: wrap;
+}
+
+#contact .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+#contact .name h3 {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+}
+
+#contact .p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    margin: 0;
+}
+
+#contact .p h3 {
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    color: white;
+}
+
+
+#contact .div p {
+    margin: 12px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#contact .div p span {
+    cursor: pointer;
+}
+
+/******************************* Icons ********************************/
+
+#call {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#call:hover {
+    color: grey;
+    transition: all 0.25s;
+}
+
+.call {
+    color:black;
+    text-decoration: none;
+}
+
+#email {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#email:hover {
+    color: grey;
+    transition: all 0.25s;
+}
+
+.email {
+    color:black;
+    text-decoration: none;
+}
+
+#fb {
+    color:white;
+    font-size: 18px;
+}
+
+#fb:hover {
+    color: #3b5998;
+    transition: all 0.25s;
+}
+
+.fb2 {
+    color:black;
+    text-decoration: none;
+}
+
+#instagram {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.25s;
+}
+
+.instagram {
+    color:black;
+    text-decoration: none;
+}
+
+#in {
+    color:white;
+    font-size: 18px;
+}
+
+#in:hover {
+    color: #0072b1;
+    transition: all 0.25s;
+}
+
+.in {
+    color: black;
+    text-decoration: none;
+}
+
+#twt {
+    color:white;
+    font-size: 18px;
+}
+
+#twt:hover {
+    color: #00acee;
+    transition: all 0.25s;
+}
+
+.twt {
+    color:black;
+    text-decoration: none;
+}
+
+/****************************** Footer ***********************************/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    height: auto;
+    margin: 0;
+}
+
+footer p {
+    font-size: 10px;
+    color: #878787;
+}
+
+footer p:hover {
+    color: white;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+/******* Hamburger & Close icon on a small screen ********/
+
+#menu {
+	position: fixed;
+	right: -100%;
+	top: 0;
+    width: 50%;
+    transition: all 0.8s;
+}
+
+#menu:target {
+	right: 0;
+	transition: all 0.8s;
+}
+
+#menu #close {
+	background-color: black;
+    padding: 18.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: black;
+    min-height: 100vh;
+}
+
+#menu ul li a {
+    display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+    margin: 20px;
+}
+
+#menu ul li a:hover {
+	color: rgb(192, 192, 192);
+}
+
+/********************************************************************************************************/
+/**************************************** Styling for a big screen **************************************/
+/********************************************************************************************************/
+
+@media(min-width: 768px) {
+
+    /******* Hamburger & Close icon on a big screen ********/
+
+    #hamburger, #menu #close {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+    }
+
+    #menu ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    
+    #menu ul li a {
+        margin: 20px;
+        color: white;
+    }
+
+    /************************ Styling for a big screen **************************/
+
+    .scroll {
+        height: 60px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+    nav img {
+        height: 60px;
+        margin: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+    
+    header h1 {
+        font-size: 30px;
+        color: white;
+        font-family: 'Open Sans';
+    }
+
+    #contact .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .div p {
+        display: inline-block;
+        margin: 12px;
+    }
+
+    #contact .div p span {
+        cursor: pointer;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    /******************************* Icons ********************************/
+    
+    #call {
+        font-size: 20px;
+    }
+
+    #email {
+        font-size: 20px;
+    }
+
+    #fb {
+        font-size: 20px;
+    }
+
+    #in {
+        font-size: 20px;
+    }
+
+    #instagram {
+        font-size: 20px;
+    }
+
+    #twt {
+        font-size: 20px;
+    }
+}

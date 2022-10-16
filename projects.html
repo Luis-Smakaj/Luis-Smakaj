@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="logo-01.svg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="projects.css">
+    <title>Luis Smakaj</title>
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <a href="#"><img src="logo-01.svg" alt="logo"></a>
+
+        <a href="#menu" id="hamburger" style="color: white; margin: 30px;">
+			<span class="material-icons-outlined">menu</span>
+		</a>
+
+		<div id="menu">
+			<div id="close">
+                <a href="#">
+				<span style="color: white;"  class="material-icons-outlined">close</span>
+                
+				</a>
+            </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <main>
+        <ul>
+            <li><a href="http://luisma18.htl-projekt.com/med2/projekt1/" target="_blank">First Project</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/projekt2/" target="_blank">Second Project</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/christmas/" target="_blank">Christmas Card</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/basicpage/" target="_blank">Basic Page</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/portfolio/" target="_blank">Portfolio</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/js_3_calculator/" target="_blank">Calculator 1</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/js_4_calculator/" target="_blank">Calculator 2</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/js_5_todos/" target="_blank">To Do List</a></li>
+            <li><a href="http://luisma18.htl-projekt.com/med2/js_6_number_guesser/" target="_blank">Number Guesser</a></li>
+        </ul>
+    </main>
+
+        <div id="contact">
+            <div class="name">
+                <h3 style="color: white;">Luis Smakaj</h3>
+            </div>
+            <div class="p">
+                <h3 style="color: white;">Future Web & App Developer</h3>
+            </div>
+            <div class="div">
+                
+                <p>
+                    <a <a href="tel:+355 68 461 2030" target="_blank"><i id="call" class="fa fa-phone" aria-hidden="true"></i></a>
+                    <a class="call" href="tel:+355 68 203 7770"></a>
+                </p>
+    
+                <p>	
+                    <a href="mailto:smakajluis@gmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a class="email" href="mailto:smakajluis@gmail.com" target="_blank"></a>
+                </p>
+                
+                <p>
+                    <a href="https://www.facebook.com/luis.smakaj/" target="_blank"><i id="fb" class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="fb2" href="https://www.facebook.com/luis.smakaj/" target="_blank"></a>
+                </p>
+    
+                <p>
+                    <a href="https://www.linkedin.com/in/luis-smakaj-065026253/" target="_blank"><i id="in" class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="in" href="https://www.linkedin.com/in/luis-smakaj-065026253/" target="_blank"></a>
+                </p>
+    
+                <p> 
+                    <a href="https://www.instagram.com/luissmaka/" target="_blank"><i id="instagram" class="fa  fa-instagram" aria-hidden="true"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/luissmaka/" target="_blank"></a>
+                </p>
+    
+                <p>
+                    <a href="https://twitter.com/luissmakaj" target="_blank"><i id="twt" class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="twt" href="https://twitter.com/luissmakaj" target="_blank"></a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Luis Smakaj | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<script>
+    var myNav = document.getElementById("nav");
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    myNav.classList.add("scroll");
+  } else {
+    myNav.classList.remove("scroll");
+  }
+};
+</script>
